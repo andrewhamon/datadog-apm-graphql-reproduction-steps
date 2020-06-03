@@ -80,6 +80,8 @@ GEM
     ffi (1.13.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    graphiql-rails (1.4.2)
+      rails
     graphql (1.10.10)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
@@ -205,6 +207,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   ddtrace
+  graphiql-rails
   graphql
   jbuilder (~> 2.7)
   listen (~> 3.2)
