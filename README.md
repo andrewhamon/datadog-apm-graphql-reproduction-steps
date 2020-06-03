@@ -29,7 +29,9 @@ When upgrading from `ddtrace` 0.34.1 to 0.36.0, graphql traces are no longer get
       }
     }
     ```
-4) observe the traces in the datadog app
+4) observe the traces in the datadog app. These are on ddtrace version 0.34.1
+5) `git revert 2f838b62a9903d5b8ed43b99286896a8d2fae5ac` to set `ddtrace` to 0.36
+6) repeat 1-4, observe that graphql traces are not working correctly
 
 ### On version 0.34.1 traces look like this, with graphql traces embedded:
 The graphql shows up in the flame chart, with the database queries nested below and wrapped in a parent rack request trace
